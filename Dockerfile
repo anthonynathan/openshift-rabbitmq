@@ -1,4 +1,4 @@
-FROM openshift/base-centos7
+FROM base-ca:latest
 
 MAINTAINER Luis Fernando Gomes <your@luiscoms.com.br>
 
