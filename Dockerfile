@@ -5,6 +5,7 @@ MAINTAINER Luis Fernando Gomes <your@luiscoms.com.br>
 ENV ERLANG_SOLUTIONS_VERSION 1.0-1
 RUN yum update -y && yum clean all
 RUN yum install -y wget && yum clean all
+RUN yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/w/wxBase-2.8.12-20.el7.x86_64.rpm
 RUN yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/w/wxGTK-gl-2.8.12-20.el7.x86_64.rpm && yum clean all
 RUN yum install -y http://packages.erlang-solutions.com/erlang-solutions-${ERLANG_SOLUTIONS_VERSION}.noarch.rpm && yum clean all
 RUN yum install -y erlang && yum clean all
