@@ -279,5 +279,3 @@ if [ "$haveSslConfig" ] && [ -f "$combinedSsl" ]; then
 fi
 
 exec "$@"
-
-rabbitmq-plugins enable rabbitmq_management
