@@ -16,7 +16,7 @@ ENV RABBITMQ_VERSION 3.6.5
 RUN yum install -y http://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-${RABBITMQ_VERSION}-1.noarch.rpm && yum clean all
 RUN echo "[{rabbit,[{loopback_users,[]}]}]." > /etc/rabbitmq/rabbitmq.config
 RUN rm -rf /var/lib/rabbitmq/mnesia
-EXPOSE 4369 5671 5672 25672
+EXPOSE 4369 5671 5672 25672 15672
 
 # get logs to stdout (thanks @dumbbell for pushing this upstream! :D)
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
